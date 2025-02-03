@@ -10,6 +10,6 @@
     bot = telebot.TeleBot(TOKEN)
     @bot.message_handler(content_type=['text'])
     def start(message):
-    ____bot.sen_message(message.chat.id,message.text)
+    ____bot.send_message(message.chat.id,message.text)
 
     bot.polling(none_stop=True,interval=5)
